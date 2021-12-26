@@ -13,6 +13,15 @@ class Speler:
     self.naam = naam
     self.Score = Score(score)
   
+# define Ronde class
+class Ronde:
+  def __init__(self, volgnummer, fase):
+    self.volgnummer = volgnummer
+    self.fase = fase
+    self.lijstSpelers = []
+  def spelerToevoegen(self, speler):
+    self.lijstSpelers.append(speler)
+  
 # creating lists       
 lijstSpelers = [] 
 lijstScores = [5, 10, 20]
